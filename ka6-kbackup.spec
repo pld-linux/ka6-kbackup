@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.08.1
+%define		kdeappsver	24.08.2
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kbackup
 Summary:	Kbackup
 Name:		ka6-%{kaname}
-Version:	24.08.1
+Version:	24.08.2
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	830d5dd4f4faf3a4ed0dc4d9a4b5d3e9
+# Source0-md5:	a5e521fd3815122de787895249501250
 URL:		https://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -51,16 +51,16 @@ Features
 - Running automated backups without using a graphical user interface
 
 %description -l pl.UTF-8
-KBackup jest aplikacją, która pozwala zapisać dowolne foldery lub pliki
-w archiwum .tar do lokalnego katalogu, np. lokalnie zamontowanego
-urządzenia jak dysk ZIP, pendrajw lub zdalny URL.
+KBackup jest aplikacją, która pozwala zapisać dowolne foldery lub
+pliki w archiwum .tar do lokalnego katalogu, np. lokalnie
+zamontowanego urządzenia jak dysk ZIP, pendrajw lub zdalny URL.
 
 Właściwości
 
 - Używa plików profili z definicjami folderów i plików, które mają
   włączone lub wyłączone z backupu
-- Urządzenie docelowe, może być albo lokalnie zamontowanym dyskiem
-  jak dysk ZIP, pendrajwem lub dowolnym zdalnym URLem
+- Urządzenie docelowe, może być albo lokalnie zamontowanym dyskiem jak
+  dysk ZIP, pendrajwem lub dowolnym zdalnym URLem
 - Wykonuje automatyczne backupy bez używania graficznego interfejsu
   użytkownika
 
@@ -114,3 +114,4 @@ rm -rf $RPM_BUILD_ROOT
 %lang(uk) %{_mandir}/uk/man1/kbackup.1*
 %lang(de) %{_mandir}/de/man1/kbackup.1*
 %lang(es) %{_mandir}/es/man1/kbackup.1*
+%lang(sl) %{_mandir}/sl/man1/kbackup.1*
