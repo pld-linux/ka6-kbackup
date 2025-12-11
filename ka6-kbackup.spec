@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.3
+%define		kdeappsver	25.12.0
 %define		kframever	6.3.0
 %define		qtver		6.7.0
 %define		kaname		kbackup
 Summary:	Kbackup
 Name:		ka6-%{kaname}
-Version:	25.08.3
-Release:	2
+Version:	25.12.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	02aa9d1dfa559057f8de54f875d1c205
+# Source0-md5:	6599ef3602bfd1204e41695beff98543
 URL:		https://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Qt5Compat-devel >= %{qtver}
@@ -126,3 +126,4 @@ rm -rf $RPM_BUILD_ROOT
 %lang(de) %{_mandir}/de/man1/kbackup.1*
 %lang(es) %{_mandir}/es/man1/kbackup.1*
 %lang(sl) %{_mandir}/sl/man1/kbackup.1*
+%lang(pt_BR) %{_mandir}/pt_BR/man1/kbackup.1*
